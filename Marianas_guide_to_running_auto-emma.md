@@ -4,21 +4,16 @@
 
 Run the following code:
 
+```
 git clone git@github.com:mitchellxh/auto-emma.git
-
 cd auto-emma
-
 uv venv --python 3.13
-
 source .venv/bin/activate
-
 uv pip install -e .
-
 playwright install chromium
-
 uv pip install vllm
-
 mkdir -p /nfs/roberts/scratch/pi_epf9/mdc74/huggingface # Make sure to replace this with the appropriate directory
+```
 
 Also made two changes directly in my copy of the code: 
 1) Changed hf_home to hf_home: "/nfs/roberts/scratch/pi_epf9/mdc74/huggingface" in config/settings.yaml; 
