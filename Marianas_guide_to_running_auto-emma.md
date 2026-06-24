@@ -12,7 +12,7 @@ source .venv/bin/activate
 uv pip install -e .
 playwright install chromium
 uv pip install vllm
-mkdir -p /nfs/roberts/scratch/pi_epf9/mdc74/huggingface # Make sure to replace this with the appropriate directory
+mkdir -p /nfs/roberts/scratch/pi_epf9/mdc74/huggingface 
 ```
 
 Also made two changes directly in my copy of the code: 
