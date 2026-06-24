@@ -1,4 +1,5 @@
-#Mariana’s guide to running auto-emma
+Mariana’s guide to running auto-emma
+
 Step 1: Initial setup – only done once
 
 Run the following code:
