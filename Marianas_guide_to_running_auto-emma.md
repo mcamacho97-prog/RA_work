@@ -1,5 +1,4 @@
-**Mariana’s guide to running auto-emma
-**
+#Mariana’s guide to running auto-emma
 Step 1: Initial setup – only done once
 
 Run the following code:
@@ -13,7 +12,7 @@ playwright install chromium
 uv pip install vllm
 mkdir -p /nfs/roberts/scratch/pi_epf9/mdc74/huggingface # Make sure to replace this with the appropriate directory
 
-# Also made two changes directly in my copy of the code: 
+Also made two changes directly in my copy of the code: 
 1) Changed hf_home to hf_home: "/nfs/roberts/scratch/pi_epf9/mdc74/huggingface" in config/settings.yaml; 
 2) Added module load CUDA/12.9.1 into the seup_env() in scripts/slurm/common.sh
 
@@ -28,9 +27,9 @@ source .venv/bin/activate
 
 Step 3: Running the Pipeline
 
-# Need to go to data/input/pws_names/ and find the appropriate file name for the state that you want to run
+Need to go to data/input/pws_names/ and find the appropriate file name for the state that you want to run
 
-# Example: run for Montana
+Example: run for Montana
 bash scripts/run_pipeline.sh \
   --state MT \
   --input-file data/input/pws_names/huc12_cws_nomobile/pws-MT-20260130.xlsx
