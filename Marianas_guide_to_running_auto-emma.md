@@ -51,6 +51,6 @@ UV_LINK_MODE=copy uv pip install -e .
 
 Step 6: Human review
 
-# Example: run for Montana
+Example: run for Montana
 cd /nfs/roberts/project/pi_epf9/$USER/auto-emma
 ./review MT
